@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #map {
+            height: 500px;
+            width: 50%;
+        }
+
+        .locali {
+            color: black;
+            text-shadow: 2px 2px 2px white;
+        }
+        .bgc{
+            background-color:black;
+            opacity: .1;
+            height:200px;
+            margin-top:-132px;
+        }
+        @media only screen and (max-width: 770px) {
+            #map {
+                width:100%
+            }
+        }
+        
+    </style>
+</head>
+    <div class="container-fluid sobrenos" style="background-color:antiquewhite; height:700px; margin-top:115px;">
+        <div class="row locali">
+            <div id="map" class="col-md-6" style="display:flex;"></div>
+            <div class="col-md-6">
+                
+                <div class="txt">
+                <h1>Pizzaria Projeto final</h1>
+                    <h5>Nós precisamos dos pontos, você não vai nos reprovar!</h5>
+                    Endereço: St. C Norte - Taguatinga, Brasília - DF, 72115-950
+                    <br> Telefone: (61) 6969-2424
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -15.820512,
+                lng: -48.070061
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMy24_HG8-zP6cPpKI0VIuQDetGaCgsbo&callback=initMap">
+
+
+    </script>
+

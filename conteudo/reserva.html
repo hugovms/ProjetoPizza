@@ -1,0 +1,132 @@
+<head>
+<style>
+    .mapa{
+        margin-top:-31%;
+        height:auto;
+        width:100%;
+    }    
+    
+    @media only screen and (max-width: 600px) {
+        .mapa{
+            height:100%;
+            width:100%;
+        }
+}
+</style>
+</head>
+<div class="container" style="height:1200px; background-color:antiquewhite; margin-top:117px;">
+<!-- Button trigger modal -->
+    <a data-toggle="collapse" href="#formulario" role="button" aria-expanded="false" aria-controls="formulario2"><button type="button" class="btn btn-warning justify-content-center col-12" data-toggle="modal" data-target="#exampleModal" >
+  Fazer reservas
+    </button></a>
+        <div class="row">
+        
+
+<!-- Modal -->
+<div style="background-color:darkred" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Faça login para continuar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Usuário</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Senha</span>
+          </div>
+          <input type="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-outline-success" data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="collapse col-12" id="formulario">
+    <br>
+    <form>
+      <div class="form-row">
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="Nome completo">
+            <br>
+        </div>
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="Telefone">
+        </div>
+      </div>
+    </form>
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1" style="color:#000">Selecione o número da fileira</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1" style="color:#000">Selecione a letra da fileira</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+          <option>F</option>
+        </select>
+    </div>
+    <button type="button" class="btn btn-success col-md-5 col-sm-6" data-toggle="modal" data-target="#exampleModal2">Confirmar reservas!</button>
+     <button type="button" class="btn btn-primary float-right col-md-5 col-sm-6" data-toggle="modal" data-target="#mapa">Mostrar mapa</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="p-3 mb-2 bg-success text-white">Reservas confirmadas com sucesso!!!</div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Fechar</button>
+                </div>  </div>
+              </div>
+                </div>      
+                
+            <div class="modal fade" id="mapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mapa de referência</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="p-3 mb-2 bg-success text-white"><img src="imagens/mapa.jpg" style="width:100%; height:auto;"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Fechar</button>
+                </div>  </div>
+              </div>
+                </div>      
+    </div>
+        </div>
+            
+    </div>
