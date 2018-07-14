@@ -14,7 +14,7 @@ debounce = function(func, wait, immediate) {
 	};
 };
 
-//função para animar cards
+
 (function(){
 	var $target = $('.anime'),
 			animationClass = 'anime-comeco',
@@ -37,5 +37,6 @@ debounce = function(func, wait, immediate) {
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
+        console.log('teste');
 	}, 100));
 })();

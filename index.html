@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
 
     <!-- Autor da Pagina -->
-    <meta name="author" content="Hugo Vieira, João Vitor">
+    <meta name="author" content="Hugo vieira, João Vitor, Augusto Leonam, Arthur">
 
     <!-- Mecanismo de Busca -->
     <meta name="description" content="Uma pizza intergalática!">
@@ -99,9 +99,8 @@
             cursor: pointer;
             border: 1px solid transparent;
         }
-
-        a:hover {
-            color: orangered!important;
+        a:hover{
+            color:orangered!important;
         }
 
         div.button {
@@ -213,22 +212,20 @@
 
             }
         }
-
         @media screen and (max-width: 900px) {
-            .imagem {
+            .imagem{
                 height: auto;
-                width: 250px;
+                width:250px;
 
             }
-        }
-
+        }  
         @media screen and (max-width: 700px) {
             .h1t {
-                font-size: 90%;
-                padding: -10px;
+               font-size:90%;
+                padding:-10px;
             }
             .pp {
-                font-size: 70px;
+               font-size:70px;
             }
         }
 
@@ -301,7 +298,7 @@
 
         .anime {
             opacity: 0;
-            transform: translate3d(-30px, 0px, 0px);
+            transform: translate3d(-30px, 0px,0px);
             transition: .5s;
         }
 
@@ -320,9 +317,8 @@
             border-color: #f7941d;
             color: white!important;
         }
-
-        .apar {
-            opacity: 0;
+        .apar{
+            opacity:0;
         }
 
     </style>
@@ -342,23 +338,23 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active menn" href="#home" id="home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active menn" href="#" id="home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="cardapio" href="#cardapio">Cardápio</a>
+                    <a class="nav-link" id="cardapio" href="#">Cardápio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " id="reserva" href="#reserva">Reserva</a>
+                    <a class="nav-link " id="reserva" href="#">Reserva</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " id="contato" href="#contato">Contato</a>
+                    <a class="nav-link " id="contato" href="#">Contato</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link " id="sobrenos" href="#sobrenos">Sobre Nós</a>
+                    <a class="nav-link " id="sobrenos" href="#">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#localiza" id="localiza">Localização</a>
+                    <a class="nav-link " href="#" id="localiza">Localização</a>
                 </li>
             </ul>
         </div>
@@ -380,8 +376,8 @@
             <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/insta.png" height="40"></a>
 
             <a href="https://www.whatsapp.com/?l=pt_br" target="_blank"><img src="imagens/wpp.png" height="40"></a>
-
-        </div>
+                
+            </div>
     </footer>
     <!-- Fim - Conteudo da Página -->
 
@@ -431,45 +427,50 @@
                 $("nav div ul li a").removeClass("active");
                 $(pagina).addClass("active");
             }
-            //func menuAtivo fim
-            
-            //carregamento da página
-				switch (window.location.href)
-				{
-					case 'http://pizzariaprojeto.000webhostapp.com/#home':
-						menuAtivo("#home");
-						carregarPagina('princ');
-						break;
-					case 'http://pizzariaprojeto.000webhostapp.com/#cardapio':
-						menuAtivo("#cardapio");
-						carregarPagina('cardapio');
-						break;
-					case 'https://deusex-machina.000webhostapp.com/#programacao':
-						menuAtivo("#programacao");
-						carregarPagina('programacao');
-						break;
-					case 'https://deusex-machina.000webhostapp.com/#games':
-						menuAtivo("#games");
-						carregarPagina('games');
-						break;
-					case 'https://deusex-machina.000webhostapp.com/#tutoriais':
-						menuAtivo("#tutoriais");
-						carregarPagina('tutoriais');
-						break;
-					case 'https://deusex-machina.000webhostapp.com/#artigos':
-						menuAtivo("#artigos");
-						carregarPagina('artigos');
-						break;
-					case 'https://deusex-machina.000webhostapp.com/#formulario':
-						menuAtivo("#formulario");
-						carregarPagina('formulario');
-						break;
-					default:
-					    menuAtivo("#home");
-						carregarPagina('princ');
-						break;
-				}
-                //fim do switch
+            carregarPagina('princ');
+            //logo
+            $("#lgo").click(function() {
+                menuAtivo('#home');
+                carregarPagina('princ');
+            });
+
+
+            $("#home").click(function() {
+                menuAtivo('#home');
+                carregarPagina('princ');
+            });
+
+
+            $("#cardapio").click(function() {
+                menuAtivo('#cardapio');
+                carregarPagina('cardapio');
+            });
+
+
+            $("#reserva").click(function() {
+                menuAtivo('#reserva');
+                carregarPagina('reserva');
+            });
+
+
+            $("#localiza").click(function() {
+                menuAtivo('#localiza');
+                carregarPagina('localiza');
+            });
+
+
+            $("#reserva").click(function() {
+                menuAtivo('#reserva');
+                carregarPagina('reserva');
+            });
+            $("#sobrenos").click(function() {
+                menuAtivo('#sobrenos');
+                carregarPagina('sobre-nos');
+            });
+
+            $("#contato").click(function() {
+                menuAtivo('#contato');
+                carregarPagina('contato');
             });
         });
 
