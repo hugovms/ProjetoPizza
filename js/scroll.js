@@ -1,4 +1,6 @@
 // Debounce do Lodash
+
+
 debounce = function(func, wait, immediate) {
 	var timeout;
 	return function() {
@@ -37,6 +39,5 @@ debounce = function(func, wait, immediate) {
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
-        console.log('teste');
 	}, 100));
 })();

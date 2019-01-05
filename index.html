@@ -34,296 +34,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-    <!-- CSS Interno -->
-    <style>
-        body .texto {
-            font-family: 'Great Vibes';
-            color: black!important;
-        }
-
-        .texto h1,
-        p {
-            color: white;
-        }
-
-        nav a {
-            font-family: 'Dosis', sans-serif;
-            font-weight: 600;
-        }
-
-        .nav {
-            margin-top: 20px;
-        }
-
-        nav {
-            box-shadow: 0px 2px 2px black!important;
-        }
-
-        .paral {
-            height: 820px;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: 50% 50%;
-        }
-
-
-        /*Paragrafo do Parallax */
-
-        .paral p {
-            font-size: 40px;
-            color: #f5f5f5;
-            text-align: center;
-            line-height: 100px;
-        }
-
-        /* Cabeçalho do Parallax */
-
-        .paral h1 {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 80px;
-            text-align: center;
-            padding-top: 100px;
-            line-height: 100px;
-        }
-
-        /* Botão do Parallax */
-
-        .paral button {
-            font-size: 30px;
-            border-radius: 5px;
-            color: #808080;
-            background-color: #a0f0f0;
-            padding: 6px 12px;
-            line-height: 40px;
-            vertical-align: middle;
-            cursor: pointer;
-            border: 1px solid transparent;
-        }
-        a:hover{
-            color:orangered!important;
-        }
-
-        div.button {
-            text-align: center;
-        }
-
-        .card-text p {
-            color: white!important;
-        }
-
-        /* Imagens do Parallax */
-
-        .paralsec1 {
-            background-image: url("imagens/bg.jpg");
-        }
-
-        .pizzasec {
-            background-image: url("imagens/bg.jpg");
-        }
-
-        .massasec {
-            background-image: url("imagens/massas.jpg");
-        }
-
-        .vinhosec {
-            background-image: url("imagens/vinho-lixo-pano.jpg");
-        }
-
-        .paralsec2 {
-            background-image: url("imagens/pizza.jpg");
-        }
-
-        .paralsec3 {
-            background-image: url("imagens/cozinha.jpg");
-        }
-
-        .paralsec4 {
-            background-image: url("imagens/dentro.jpg");
-        }
-
-        .paralsec5 {
-            background-image: url("imagens/pizzaquali.jpg");
-        }
-
-        .pagina {
-            background-color: red;
-        }
-
-        .nav-link .active {
-            color: darkred;
-        }
-
-        .cardapio ul {
-            font-weight: 600;
-            display: flex;
-            margin: auto;
-            align-content: center;
-            align-items: center;
-        }
-
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-
-        .btn-warning {
-            background-color: #f7941d;
-        }
-
-        .btn-warning:hover {
-            background-color: #f77100;
-        }
-
-        .card-title,
-        .card-text,
-        .card-footer {
-            color: white;
-        }
-
-        .card {
-            border: none;
-            background-color: #7f0000;
-        }
-
-        .texto .card {
-            border: none;
-            background-color: antiquewhite;
-            box-shadow: none;
-        }
-
-        .active {
-            color: #7f0000!important;
-        }
-
-        .icones {
-            float: right;
-            margin-top: -100px;
-            display: inline-flex;
-        }
-
-        .icones img {
-            margin: 15px;
-        }
-
-        @media screen and (max-width: 900px) {
-            .icones img {
-                height: 20px;
-                margin: 1px;
-
-            }
-        }
-        @media screen and (max-width: 900px) {
-            .imagem{
-                height: auto;
-                width:250px;
-
-            }
-        }  
-        @media screen and (max-width: 700px) {
-            .h1t {
-               font-size:90%;
-                padding:-10px;
-            }
-            .pp {
-               font-size:70px;
-            }
-        }
-
-        .cardapio ul {
-            font-weight: 600;
-            display: flex;
-            margin: auto;
-            align-content: center;
-            align-items: center;
-        }
-
-        .card img {
-            height: 300px;
-            width: auto;
-        }
-
-        .cardp {
-            background-color: #791111;
-            color: white;
-            text-shadow: 2px 2px 2px black;
-            box-shadow: 10px 8px 20px black;
-        }
-
-        .ch1 {
-            color: #f7941d;
-            text-shadow: 3px 2px 5px black;
-        }
-
-        .list-group a {
-            background-color: #f7941d;
-            color: darkred;
-        }
-
-        .list-group a:hover {
-            background-color: orangered;
-            color: black;
-        }
-
-        .list-group {
-            height: 50px;
-        }
-
-        aside {
-            position: fixed;
-            width: 15%;
-        }
-
-        @media screen and (max-height: 450px) {
-            aside {
-                padding-top: 15px;
-            }
-            aside a {
-                font-size: 20px;
-            }
-            .imagem {
-                height: 10px;
-                width: auto;
-            }
-        }
-
-        .sobrenos {
-            font-family: 'Dosis';
-            font-weight: 600;
-            font-size: 20px;
-        }
-
-        .cardapio .card-text {
-            color: white!important;
-        }
-
-        .anime {
-            opacity: 0;
-            transform: translate3d(-30px, 0px,0px);
-            transition: .5s;
-        }
-
-        .anime-comeco {
-            opacity: 1;
-            transform: translate3d(0px, 0px, 50px);
-
-        }
-
-        .formulario {
-            color: #f7941d!important;
-        }
-
-        .card-body {
-            border-top: 15px solid;
-            border-color: #f7941d;
-            color: white!important;
-        }
-        .apar{
-            opacity:0;
-        }
-
-    </style>
-    <!-- Fim do CSS interno -->
-
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nano.css" />
 </head>
 
 <body style="background-color:#7f0000;">
@@ -387,10 +99,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Importando Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
 
     <!-- Importando o BootsTrap - CCS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
     <!-- Fim -> Bibliotecas Externas -->
 
     <!-- JavaScript - JQuery - Algoritimo -->
@@ -473,10 +185,19 @@
                 carregarPagina('contato');
             });
         });
-
+        
     </script>
     <!-- Fim - JavaScript - JQuery - Algoritmo -->
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+     <script type="text/JavaScript" >
+        $("html").niceScroll({
 
+            cursorcolor: "#f7941d",
+            cursorwidth: "8px",
+            cursorborder: "0px"
+
+        });
+     </script>
     <!-- Fim - All JavaScript  -->
 </body>
 
